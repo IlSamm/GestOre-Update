@@ -7,5 +7,3 @@ Qui devono finire solo le GitHub Releases con gli asset dell'installer:
 - `GestOre-Setup-x.x.x.exe`
 - `GestOre-Setup-x.x.x.exe.blockmap`
 - `latest.yml`
-
-Il codice sorgente dell'app non deve essere caricato in questa repository.
