@@ -2,11 +2,11 @@
 
 Benvenuto nel canale ufficiale degli aggiornamenti di **GestOre Desktop**.
 
-Questa repository pubblica è dedicata esclusivamente alla distribuzione delle **release ufficiali** dell’applicazione, permettendo agli utenti di scaricare, installare e ricevere sempre la versione più recente in modo semplice, rapido e ordinato.
+Questa repository pubblica è dedicata esclusivamente alla distribuzione delle **release ufficiali** dell’applicazione, permettendo agli utenti di scaricare, installare e ricevere sempre la versione più recente in modo semplice, veloce e ordinato.
 
 ## Contenuto della repository
 
-All’interno di questa repository vengono pubblicati solamente gli asset necessari per l’installazione e per il sistema di aggiornamento di **GestOre Desktop**:
+All’interno di questa repository vengono pubblicati solo gli asset necessari per l’installazione e per il sistema di aggiornamento di **GestOre Desktop**:
 
 - `GestOre-Setup-x.x.x.exe`
 - `GestOre-Setup-x.x.x.exe.blockmap`
@@ -15,41 +15,43 @@ All’interno di questa repository vengono pubblicati solamente gli asset necess
 ## A cosa serve questo canale
 
 Questo canale è stato creato per gestire in modo chiaro e affidabile tutti gli aggiornamenti dell’app.  
-Grazie alle release pubblicate qui, **GestOre Desktop** può ricevere nuove versioni, correzioni, miglioramenti e ottimizzazioni in modo più immediato, evitando ogni volta il download manuale completo quando non necessario.
+Attraverso le release pubblicate qui, **GestOre Desktop** può ricevere nuove versioni, correzioni, miglioramenti e ottimizzazioni in modo più rapido ed efficiente.
+
+L’obiettivo è permettere a tutti gli utenti di avere sempre l’ultima versione disponibile senza dover scaricare manualmente ogni volta l’intero pacchetto di installazione, rendendo così il processo di aggiornamento molto più semplice e immediato.
 
 ## Cos’è GestOre
 
-**GestOre** è un’app desktop pensata per offrire un’esperienza moderna, intuitiva e pratica nella gestione delle attività, dell’organizzazione e dell’utilizzo quotidiano.  
-Il progetto nasce con l’obiettivo di unire semplicità, ordine e funzionalità in un’unica applicazione, con un’interfaccia curata e un sistema progettato per essere sempre più completo ed efficiente nel tempo.
+**GestOre** è un’app desktop pensata per la gestione completa delle **ore lavorative**, progettata per offrire uno strumento pratico, ordinato e intuitivo per tenere sotto controllo il proprio lavoro in modo più dettagliato e preciso.
 
-## Come funziona l’app
+Non si limita alla semplice registrazione delle ore, ma consente di gestire molte più informazioni utili legate all’attività lavorativa quotidiana e mensile, offrendo una visione più chiara, completa e organizzata di tutto il tempo lavorato.
 
-**GestOre Desktop** è progettata per essere utilizzata direttamente da computer tramite installer dedicato per Windows.  
-Una volta installata, l’app consente all’utente di accedere a un ambiente desktop stabile, semplice da usare e pensato per rendere più immediata la gestione delle funzioni principali del progetto.
+## Come funziona
 
-L’app viene costantemente migliorata e aggiornata, sia dal punto di vista tecnico che grafico, per offrire un’esperienza sempre più fluida, moderna e affidabile.
+**GestOre Desktop** è pensata per essere utilizzata direttamente su **Windows** tramite installer dedicato.  
+Una volta installata, l’app permette di registrare, consultare e analizzare i dati lavorativi in modo semplice e immediato, con un’interfaccia progettata per rendere ogni operazione più veloce e comoda.
 
-## Come gira GestOre
+L’app consente di gestire diverse tipologie di ore e informazioni, tra cui:
 
-GestOre è sviluppata come applicazione desktop, pensata per funzionare in modo pratico e diretto su ambiente Windows.  
-Il sistema di distribuzione degli aggiornamenti è basato sulle **GitHub Releases**, che permettono all’app di identificare e ricevere le versioni più recenti in modo più veloce ed efficiente.
+- ore normali
+- ore straordinarie
+- ferie
+- malattia
+- festività
+- analisi mensili dei dati lavorativi
 
-## Tecnologie utilizzate
+Questo permette di avere un controllo più preciso della propria situazione lavorativa, mese per mese, con una gestione molto più completa rispetto a un semplice conteggio delle ore.
 
-**GestOre** è stata sviluppata utilizzando tecnologie moderne per garantire prestazioni, semplicità di utilizzo e possibilità di crescita continua del progetto.
+## Salvataggio dei dati
 
-Tecnologie principali utilizzate:
+Uno degli aspetti principali di **GestOre** è il salvataggio dei dati in locale.  
+L’app salva infatti le informazioni direttamente in una **cartella presente sul PC**, permettendo una gestione pratica e diretta dei dati da parte dell’utente.
 
-- **[inserisci framework desktop]**
-- **[inserisci linguaggio/frontend]**
-- **[inserisci backend o logica applicativa]**
-- **[inserisci database, se presente]**
-- **Sistema di rilascio e aggiornamento tramite GitHub Releases**
+Questo approccio rende il sistema più semplice, immediato e focalizzato sull’utilizzo desktop, mantenendo i dati dell’app organizzati localmente all’interno del computer.
 
-## Stato del progetto
+## Evoluzione del progetto
 
-**GestOre** è un progetto in continua evoluzione.  
-L’app è già arrivata a un ottimo punto di sviluppo, ma continuerà a ricevere aggiornamenti costanti, nuove funzionalità, miglioramenti dell’interfaccia e ottimizzazioni generali, con l’obiettivo di crescere versione dopo versione.
+**GestOre** è un progetto in continua crescita e sviluppo attivo.  
+L’app è già arrivata a un ottimo punto, ma continuerà a ricevere aggiornamenti costanti, miglioramenti grafici, ottimizzazioni tecniche e nuove funzionalità, con l’obiettivo di diventare sempre più completa, stabile ed efficace nel tempo.
 
 ---
 
