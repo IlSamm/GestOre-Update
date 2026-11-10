@@ -1,0 +1,8 @@
+- Canale Test: nuova grafica (barra laterale sempre visibile, calendario, pannelli e schermata di accesso rinnovati).
+- Corretto il popup "Giorni da sistemare" (testo HTML visibile, compariva sopra il blocco, contava il giorno corrente).
+- Il giorno corrente non viene più segnato come "da compilare".
+- Widget desktop di nuovo funzionante.
+- Colori accento visibili e applicati correttamente; pulsanti finestra colorati.
+- "Chiudi mese (Audit)" e "Privacy" di nuovo raggiungibili dal menu "Altro".
+- Calendario sempre a 7 colonne anche con finestra stretta; festivi più leggibili.
+- Insights: valori corretti con mese vuoto, media ore/giorno sui giorni trascorsi.

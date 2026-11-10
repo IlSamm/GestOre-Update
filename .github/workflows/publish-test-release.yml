@@ -1,0 +1,63 @@
+name: Publish test-channel release
+
+# Pubblica una release del CANALE TEST (pre-release) a partire dai file in
+# release-staging/<tag>/ : installer (eventualmente diviso in parti .partNN),
+# .blockmap, beta.yml e notes.md. Il checksum dell'installer viene verificato
+# contro beta.yml prima della pubblicazione.
+
+on:
+  push:
+    paths:
+      - "release-staging/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish pre-release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for dir in release-staging/*/; do
+            tag="$(basename "$dir")"
+            if gh release view "$tag" >/dev/null 2>&1; then
+              echo "La release $tag esiste già: salto."
+              continue
+            fi
+            if [ ! -f "$dir/beta.yml" ]; then
+              echo "::error::$dir/beta.yml mancante: solo il canale test è pubblicabile da qui."
+              exit 1
+            fi
+            out="$(mktemp -d)"
+            exe="$(sed -n 's/^path: //p' "$dir/beta.yml")"
+            if ls "$dir/$exe".part* >/dev/null 2>&1; then
+              cat "$dir/$exe".part* > "$out/$exe"
+            else
+              cp "$dir/$exe" "$out/$exe"
+            fi
+            cp "$dir/$exe.blockmap" "$dir/beta.yml" "$out/"
+            expected="$(sed -n 's/^sha512: //p' "$dir/beta.yml")"
+            actual="$(openssl dgst -sha512 -binary "$out/$exe" | base64 -w0)"
+            if [ "$expected" != "$actual" ]; then
+              echo "::error::Checksum dell'installer non valido per $tag"
+              exit 1
+            fi
+            version="${tag#v}"
+            gh release create "$tag" \
+              --target "$GITHUB_SHA" \
+              --title "GestOre $version" \
+              --notes-file "$dir/notes.md" \
+              --prerelease \
+              --latest=false \
+              "$out/$exe" "$out/$exe.blockmap" "$out/beta.yml"
+            echo "Pubblicata pre-release $tag (canale test)."
+          done
