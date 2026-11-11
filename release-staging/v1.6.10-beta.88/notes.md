@@ -1,0 +1,3 @@
+- Canale Test: corretto il crash all'avvio su Windows ("DOMMatrix is not defined").
+- La lettura dei PDF delle buste paga viene caricata solo quando serve: un suo eventuale errore non blocca più l'app.
+- Include tutte le novità della 1.6.10-beta.87 (nuova grafica e correzioni).
